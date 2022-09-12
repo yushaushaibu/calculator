@@ -21,8 +21,42 @@
 }
 
 body {
-  font-family: var(--ff-primary);
-  font-size: 1.8rem;
-  letter-spacing: 5px;
-  user-select: none;
+    font-family: var(--ff-primary);
+    font-size: 1.9rem;
+    letter-spacing: 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.calculator {
+    border: 1px solid var(--clr-grey);
+    border-radius: 2px;
+    width: 400px;
+    height: 600px;
+    padding: 25px;
+    margin: 25px 20px;
+}
+
+.display {
+    border: 1px solid var(--clr-grey);
+    border-radius: 2px;
+    height: 100px;
+}
+
+.operators {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+}
+
+.operators div {
+    border: 1px solid var(--clr-grey);
+    padding: .5em .9em;
+    margin-top: 15px;
+    text-align: center;
 }
