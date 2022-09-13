@@ -23,6 +23,7 @@
 body {
   font-family: var(--ff-primary);
   background-color: var(--clr-light-grey);
+  user-select: none;
 }
 
 .main {
@@ -35,28 +36,54 @@ body {
 .calculator {
   font-size: 1.9rem;
   letter-spacing: 5px;
-  border: 1px solid var(--clr-grey);
+  border: 1px solid var(--clr-dark);
   border-radius: 2px;
   min-width: 350px;
   min-height: 600px;
   padding: 25px;
   margin: 25px 20px;
+  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
 }
 
-.display {
-  border: 1px solid var(--clr-grey);
+.screen {
+  border: 1px solid var(--clr-dark);
   border-radius: 2px;
   height: 100px;
+  padding-right: 15px;
+  padding-top: 10px;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
 }
+
+/* .screen:hover {
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+} */
 
 .operators div {
   display: inline-block;
   border: 1px solid var(--clr-grey);
+  background-color: var(--clr-grey);
   border-radius: 2px;
   width: 66px;
   text-align: center;
   padding: 0.5em 0.2em;
   margin: 10px 0;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.operators div:hover {
+  background-color: var(--clr-grey);
+  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
+}
+
+.operators div:active {
+  font-weight: bold;
 }
 
 .panel {
@@ -66,30 +93,59 @@ body {
 .numbers div {
   display: inline-block;
   border: 1px solid var(--clr-grey);
+  background-color: var(--clr-light);
   border-radius: 2px;
   width: 66px;
   text-align: center;
   padding: 0.5em 0.2em;
   margin: 10px 0;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.numbers div:hover {
+  background-color: var(--clr-light);
+  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
+}
+
+.numbers div:active {
+  font-weight: bold;
 }
 
 div.equal {
   background-color: var(--clr-dark);
+  color: var(--clr-light);
+  border-radius: 2px;
   padding: 4.95em 0.8em;
   margin-left: 10px;
   margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+div.equal:hover {
+  background-color: var(--clr-dark);
+  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
+  border-color: var(--clr-light);
+}
+
+div.equal:active {
+  font-weight: bold;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .fab.fa-github {
-    color: var(--clr-dark);
-    margin: 5px;
+  color: var(--clr-dark);
+  margin: 5px;
 }
