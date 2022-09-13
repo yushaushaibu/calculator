@@ -22,8 +22,7 @@
 
 body {
   font-family: var(--ff-primary);
-  font-size: 1.9rem;
-  letter-spacing: 5px;
+  background-color: var(--clr-light-grey);
 }
 
 .main {
@@ -34,10 +33,12 @@ body {
 }
 
 .calculator {
+  font-size: 1.9rem;
+  letter-spacing: 5px;
   border: 1px solid var(--clr-grey);
   border-radius: 2px;
-  width: 350px;
-  height: 600px;
+  min-width: 350px;
+  min-height: 600px;
   padding: 25px;
   margin: 25px 20px;
 }
@@ -58,6 +59,10 @@ body {
   margin: 10px 0;
 }
 
+.panel {
+  display: flex;
+}
+
 .numbers div {
   display: inline-block;
   border: 1px solid var(--clr-grey);
@@ -66,4 +71,25 @@ body {
   text-align: center;
   padding: 0.5em 0.2em;
   margin: 10px 0;
+}
+
+div.equal {
+  background-color: var(--clr-dark);
+  padding: 4.95em 0.8em;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.fab.fa-github {
+    color: var(--clr-dark);
+    margin: 5px;
 }
