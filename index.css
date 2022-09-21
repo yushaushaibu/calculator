@@ -151,7 +151,7 @@ div.equal:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -159,4 +159,12 @@ div.equal:active {
 .fab.fa-github {
   color: var(--clr-dark);
   margin: 5px;
+}
+
+
+/* Mobile */
+@media(max-width: 500px) {
+  .footer {
+    margin-top: 50px;
+  }
 }
