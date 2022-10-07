@@ -60,12 +60,13 @@ body {
   border: 1px solid var(--clr-dark);
   background-color: var(--clr-light-grey);
   border-radius: 2px;
-  width: 100%;
+  width: 297px;
   height: 100px;
-  padding-right: 15px;
-  padding-top: 10px;
-  margin-right: 6px;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 2.5rem;
+  text-align: right;
   overflow-x: auto;
 }
 
@@ -81,6 +82,10 @@ body {
   cursor: pointer;
   transition: border-color 0.2s ease-in-out, background-color 0.2s,
     box-shadow 0.2s;
+}
+
+.operators {
+  /* border: 2px solid red; */
 }
 
 .operators div:hover {
@@ -129,7 +134,7 @@ div.equal {
   background-color: var(--clr-light-blue);
   color: var(--clr-dark);
   border-radius: 2px;
-  padding: 4.95em 0.75em;
+  padding: 4.96em 0.77em;
   margin-left: 10px;
   margin-top: 10px;
   cursor: pointer;
